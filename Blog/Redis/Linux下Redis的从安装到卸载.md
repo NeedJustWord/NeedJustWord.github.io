@@ -136,7 +136,7 @@
    echo "/usr/redis/bin/redis-server /usr/redis/bin/redis.conf" >>/etc/rc.local
    ```
 
-   如果发现redis开机启动失败，则说明**/etc/rc.local没有启动**，执行以下命令后重启即可
+   如果发现redis开机启动失败，则说明***/etc/rc.local没有启动***，执行以下命令后重启即可
 
    ```bash
    chmod +x /etc/rc.d/rc.local
@@ -153,7 +153,7 @@
 
 11. 详细配置
 
-    [redis的详细配置](/redis的详细配置.md)
+    [Redis的详细配置](./Redis的详细配置.md)
 
 12. 卸载
 
