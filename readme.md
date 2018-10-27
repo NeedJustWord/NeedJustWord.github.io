@@ -13,7 +13,7 @@
 
 ## Redis
 
-[Linux下Redis的从安装到卸载](Blog/Redis/Linux下Redis的从安装到卸载.md)
+[Linux下Redis从安装到卸载](Blog/Redis/Linux下Redis从安装到卸载.md)
 
 [Redis的详细配置](Blog/Redis/Redis的详细配置.md)
 

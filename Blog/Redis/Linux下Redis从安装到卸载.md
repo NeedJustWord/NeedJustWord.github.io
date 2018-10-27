@@ -1,4 +1,4 @@
-# Linux下Redis的从安装到卸载
+# Linux下Redis从安装到卸载
 
 1. 下载安装包
 
