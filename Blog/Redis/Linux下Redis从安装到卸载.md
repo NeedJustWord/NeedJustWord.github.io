@@ -146,10 +146,29 @@
 
 10. 开放端口
 
+    开放redis监听的6379端口
+
     ```bash
-    ## 开放本机6379端口，如果redis是使用其他的端口，则开放对应的端口即可
-    /sbin/iptables -I INPUT -p tcp --dport 6379 -j ACCEPT
+    ## 编辑/etc/sysconfig/iptables文件：
+    vi /etc/sysconfig/iptables
+    
+    ## 在22端口的下面加入内容并保存：
+    ...
+    -A INPUT -p tcp -m state --state NEW -m tcp --dport 22 -j ACCEPT
+    -A INPUT -p tcp -m state --state NEW -m tcp --dport 6379 -j ACCEPT
+    ...
+    
+    ## CentOS6下重启服务：
+    service iptables restart
+    ## CentOS7下重启服务：
+    systemctl restart iptables
+    
+    ## 查看端口是否开放：
+    /sbin/iptables -L -n
     ```
+
+    > 如果/etc/sysconfig/下没有iptables，请参考[解决CentOS（6和7版本）没有iptables的问题](../Linux/解决CentOS（6和7版本）没有iptables的问题.md)
+
 
 11. 详细配置
 

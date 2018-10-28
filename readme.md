@@ -7,6 +7,8 @@
 
 [Linux常用软件安装命令](Blog/Linux/Linux常用软件安装命令.md)
 
+[解决CentOS（6和7版本）没有iptables的问题](Blog/Linux/解决CentOS（6和7版本）没有iptables的问题.md)
+
 ## Markdown语法
 
 [超链接](Blog/Markdown语法/超链接.md)
