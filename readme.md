@@ -21,7 +21,11 @@
 
 ## 其他
 
+[Office官方卸载工具](Blog/其他/Office官方卸载工具.md)
+
 [如何删除一个CSDN上自己上传的资源](Blog/其他/如何删除一个CSDN上自己上传的资源.md)
 
 [批处理管理VMware服务](Blog/其他/批处理管理VMware服务.md)
+
+[正版免费无广告的WinRAR下载方法](Blog/其他/正版免费无广告的WinRAR下载方法.md)
 
