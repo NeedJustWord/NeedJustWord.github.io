@@ -1,9 +1,5 @@
 ## 如何删除一个CSDN上自己上传的资源
 
-原文地址：http://www.xuebuyuan.com/1875216.html
-
-
-
 找到你想删除的资源，其URL举例为：
 
 ```
@@ -15,6 +11,8 @@ http://download.csdn.net/detail/ssergsw/1234567
 ```
 http://download.csdn.net/index.php/user_console/del_my_source/1234567
 ```
+
+> 就是把第一个url末尾的那串数字拼到这个url的末尾即可
 
 删除成功返回：
 
@@ -34,4 +32,7 @@ http://download.csdn.net/index.php/user_console/del_my_source/1234567
 {"succ":0,"msg":"你没有权限操作"}
 ```
 
+
+
+原文：http://www.xuebuyuan.com/1875216.html
 
