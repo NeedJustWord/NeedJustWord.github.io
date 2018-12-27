@@ -46,21 +46,21 @@
    ```c#
    class Program
    {
-   	public IUserBll UserBll { get; set; }
+       public IUserBll UserBll { get; set; }
    
-   	public static void Main(string[] args)
-   	{
-   		UnityContainer container = new UnityContainer();
+       public static void Main(string[] args)
+       {
+           UnityContainer container = new UnityContainer();
            //下面这行代码报异常
-   		UnityConfigurationSection config = (UnityConfigurationSection)ConfigurationManager.GetSection(UnityConfigurationSection.SectionName);
+           UnityConfigurationSection config = (UnityConfigurationSection)ConfigurationManager.GetSectio(UnityConfigurationSection.SectionName);
    
-   		config.Configure(container, "MyContainer");
+           config.Configure(container, "MyContainer");
    
-   		IUserBll IUser = container.Resolve<IUserBll>();
+           IUserBll IUser = container.Resolve<IUserBll>();
    
-   		IUser.Display("test");
-   		Console.ReadLine();
-   	}
+           IUser.Display("test");
+           Console.ReadLine();
+       }
    }
    ```
 
