@@ -52,7 +52,7 @@
        {
            UnityContainer container = new UnityContainer();
            //下面这行代码报异常
-           UnityConfigurationSection config = (UnityConfigurationSection)ConfigurationManager.GetSectio(UnityConfigurationSection.SectionName);
+           UnityConfigurationSection config = (UnityConfigurationSection)ConfigurationManager.GetSection(UnityConfigurationSection.SectionName);
    
            config.Configure(container, "MyContainer");
    
