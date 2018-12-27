@@ -1,11 +1,11 @@
 ﻿
 # NeedJustWord的个人博客
 
+## IoC
+
+[Unity埋坑记](Blog/IoC/Unity埋坑记.md)
+
 ## Linux
-
-[Linux常用命令](Blog/Linux/Linux常用命令.md)
-
-[Linux常用软件安装命令](Blog/Linux/Linux常用软件安装命令.md)
 
 [解决CentOS（6和7版本）没有iptables的问题](Blog/Linux/解决CentOS（6和7版本）没有iptables的问题.md)
 
