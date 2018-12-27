@@ -51,7 +51,8 @@
    	public static void Main(string[] args)
    	{
    		UnityContainer container = new UnityContainer();
-   		UnityConfigurationSection config = (UnityConfigurationSection)ConfigurationManager.GetSection(UnityConfigurationSection.SectionName);//这里报异常
+           //下面这行代码报异常
+   		UnityConfigurationSection config = (UnityConfigurationSection)ConfigurationManager.GetSection(UnityConfigurationSection.SectionName);
    
    		config.Configure(container, "MyContainer");
    
