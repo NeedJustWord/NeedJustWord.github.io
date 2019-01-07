@@ -7,6 +7,10 @@
 
 ## Linux
 
+[CentOS常用软件安装命令](Blog/Linux/CentOS常用软件安装命令.md)
+
+[Linux常用命令](Blog/Linux/Linux常用命令.md)
+
 [解决CentOS（6和7版本）没有iptables的问题](Blog/Linux/解决CentOS（6和7版本）没有iptables的问题.md)
 
 ## Markdown语法
@@ -28,4 +32,8 @@
 [批处理管理VMware服务](Blog/其他/批处理管理VMware服务.md)
 
 [正版免费无广告的WinRAR下载方法](Blog/其他/正版免费无广告的WinRAR下载方法.md)
+
+## 开源项目
+
+[收集的开源项目](Blog/开源项目/收集的开源项目.md)
 
