@@ -1,6 +1,10 @@
 ﻿
 # NeedJustWord的个人博客
 
+## DotNetCore
+
+[编译时禁止自动生成目标版本文件夹](Blog/DotNetCore/编译时禁止自动生成目标版本文件夹.md)
+
 ## IoC
 
 [Unity埋坑记](Blog/IoC/Unity埋坑记.md)
