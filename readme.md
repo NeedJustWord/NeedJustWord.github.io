@@ -3,6 +3,8 @@
 
 ## DotNetCore
 
+[DotNetCore默认不支持GB2312的解决办法](Blog/DotNetCore/DotNetCore默认不支持GB2312的解决办法.md)
+
 [编译时禁止自动生成目标版本文件夹](Blog/DotNetCore/编译时禁止自动生成目标版本文件夹.md)
 
 ## IoC
