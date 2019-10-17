@@ -8,4 +8,3 @@
 Encoding.RegisterProvider(CodePagesEncodingProvider.Instance);
 ```
 
-

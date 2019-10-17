@@ -5,6 +5,8 @@
 
 [DotNetCore默认不支持GB2312的解决办法](Blog/DotNetCore/DotNetCore默认不支持GB2312的解决办法.md)
 
+[使用AdoNetCore.AseClient连接Sybase数据库时报不支持cp936字符集的解决方法](Blog/DotNetCore/使用AdoNetCore.AseClient连接Sybase数据库时报不支持cp936字符集的解决方法.md)
+
 [编译时禁止自动生成目标版本文件夹](Blog/DotNetCore/编译时禁止自动生成目标版本文件夹.md)
 
 ## IoC
