@@ -9,6 +9,8 @@
 
 [编译时禁止自动生成目标版本文件夹](Blog/DotNetCore/编译时禁止自动生成目标版本文件夹.md)
 
+[通过配置文件修改监听端口](Blog/DotNetCore/通过配置文件修改监听端口.md)
+
 ## IoC
 
 [Unity埋坑记](Blog/IoC/Unity埋坑记.md)
