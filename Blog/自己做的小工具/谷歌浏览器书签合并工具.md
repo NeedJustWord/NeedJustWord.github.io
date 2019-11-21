@@ -18,6 +18,18 @@
 
 
 
+#### [v2.0.1](https://github.com/NeedJustWord/BookmarkMergeTool/blob/master/Exes/BookmarkMergeTool%20v2.0.1.rar)更新日志：
+
+1. 提高程序的健壮性
+2. 同一文件夹下的书签去重
+3. 设置控制台标题并显示程序版本号
+4. 将书签和文件夹的时间戳更新到最新值
+5. 书签顺序的调整也能体现在合并后的书签里
+6. 同时添加同一书签时，合并后只保留先添加的那个
+7. 同时更新同一书签的图标时，合并后只保留后更新的那个
+
+
+
 #### [v2.0.0](https://github.com/NeedJustWord/BookmarkMergeTool/blob/master/Exes/BookmarkMergeTool%20v2.0.0.rar)使用方法：
 
 1. 打开BookmarkMergeTool.exe.config文件
