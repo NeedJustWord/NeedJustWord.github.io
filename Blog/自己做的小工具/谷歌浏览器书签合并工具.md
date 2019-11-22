@@ -2,19 +2,13 @@
 
 #### 工具名称：
 
-谷歌浏览器书签合并工具
+[谷歌浏览器书签合并工具](https://github.com/NeedJustWord/BookmarkMergeTool)
 
 
 
 #### 背景：
 
 公司和家里的谷歌浏览器书签需要同步，但是由于总所周知的原因，谷歌浏览器自带的书签同步功能不能使用，而手工合并费时费力。
-
-
-
-#### 源码：
-
-[https://github.com/NeedJustWord/BookmarkMergeTool](https://github.com/NeedJustWord/BookmarkMergeTool)
 
 
 
