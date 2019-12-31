@@ -21,6 +21,8 @@
 
 [CentOS常用软件安装命令](Blog/Linux/CentOS常用软件安装命令.md)
 
+[CentOS离线安装aspnetcore运行时](Blog/Linux/CentOS离线安装aspnetcore运行时.md)
+
 [Linux常用命令](Blog/Linux/Linux常用命令.md)
 
 [解决CentOS（6和7版本）没有iptables的问题](Blog/Linux/解决CentOS（6和7版本）没有iptables的问题.md)
