@@ -19,16 +19,18 @@
 
 4. #### 配置环境变量
 
-   在**/etc/profile**文件末尾加上如下两行：
-
    ```bash
+   #修改profile文件
+   vi /etc/profile
+   
+   #在文件末尾加上如下两行
    export DOTNET_ROOT=/usr/local/bin/dotnet
    export PATH=$DOTNET_ROOT:$PATH
-   ```
-
-   执行如下命令使改动生效
-
-   ```bash
+   
+   #按Esc，执行如下命令保存退出
+   :wq
+   
+   #执行如下命令使改动生效
    source /etc/profile
    ```
 
