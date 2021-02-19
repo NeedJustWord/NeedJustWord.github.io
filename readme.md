@@ -39,6 +39,8 @@
 
 ## 其他
 
+[Git常用命令](Blog/其他/Git常用命令.md)
+
 [Office官方卸载工具](Blog/其他/Office官方卸载工具.md)
 
 [Windows命令计算文件哈希值](Blog/其他/Windows命令计算文件哈希值.md)
