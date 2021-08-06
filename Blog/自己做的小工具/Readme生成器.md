@@ -8,16 +8,23 @@
 
 #### 作用：
 
-根据目录信息生成readme文件，其中目录名当作分类，文件名当作超链接
+根据目录信息生成readme文件
 
-> 只支持一级目录
+
+
+#### [v2.0.0](https://github.com/NeedJustWord/ReadmeGenerator/blob/master/Exes/ReadmeGenerator%20v2.0.0.rar)更新日志：
+
+1. 支持多级目录生成层级结构的readme文件
+2. 目录生成能跳转到对应目录的超链接
+3. 文件超链接显示文件名后缀
+4. 生成后自动退出程序
 
 
 
 #### [v1.0.0](https://github.com/NeedJustWord/ReadmeGenerator/blob/master/Exes/ReadmeGenerator%20v1.0.0.rar)使用方法：
 
-2. 按注释修改config配置文件
-3. 运行exe程序，按任意键退出
+1. 按注释修改config配置文件
+2. 运行exe程序，按任意键退出
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?>

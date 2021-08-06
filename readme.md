@@ -1,7 +1,11 @@
 ﻿
 # NeedJustWord的个人博客
 
-[1.DotNetCore](Blog/DotNetCore)
+[1.DotNet](Blog/DotNet)
+
+&emsp;&emsp;[1.DotNetty出现ClosedChannelException(发生IO错误)异常的原因分析及解决办法.md](Blog/DotNet/DotNetty出现ClosedChannelException(发生IO错误)异常的原因分析及解决办法.md)
+
+[2.DotNetCore](Blog/DotNetCore)
 
 &emsp;&emsp;[1.DotNetCore默认不支持GB2312的解决办法.md](Blog/DotNetCore/DotNetCore默认不支持GB2312的解决办法.md)
 
@@ -13,11 +17,11 @@
 
 &emsp;&emsp;[5.通过配置文件修改监听端口.md](Blog/DotNetCore/通过配置文件修改监听端口.md)
 
-[2.IoC](Blog/IoC)
+[3.IoC](Blog/IoC)
 
 &emsp;&emsp;[1.Unity埋坑记.md](Blog/IoC/Unity埋坑记.md)
 
-[3.Linux](Blog/Linux)
+[4.Linux](Blog/Linux)
 
 &emsp;&emsp;[1.CentOS常用软件安装命令.md](Blog/Linux/CentOS常用软件安装命令.md)
 
@@ -27,17 +31,17 @@
 
 &emsp;&emsp;[4.解决CentOS（6和7版本）没有iptables的问题.md](Blog/Linux/解决CentOS（6和7版本）没有iptables的问题.md)
 
-[4.Markdown语法](Blog/Markdown语法)
+[5.Markdown语法](Blog/Markdown语法)
 
 &emsp;&emsp;[1.超链接.md](Blog/Markdown语法/超链接.md)
 
-[5.Redis](Blog/Redis)
+[6.Redis](Blog/Redis)
 
 &emsp;&emsp;[1.Linux下Redis从安装到卸载.md](Blog/Redis/Linux下Redis从安装到卸载.md)
 
 &emsp;&emsp;[2.Redis的详细配置.md](Blog/Redis/Redis的详细配置.md)
 
-[6.其他](Blog/其他)
+[7.其他](Blog/其他)
 
 &emsp;&emsp;[1.Git常用命令.md](Blog/其他/Git常用命令.md)
 
@@ -51,11 +55,11 @@
 
 &emsp;&emsp;[6.正版免费无广告的WinRAR下载方法.md](Blog/其他/正版免费无广告的WinRAR下载方法.md)
 
-[7.开源项目](Blog/开源项目)
+[8.开源项目](Blog/开源项目)
 
 &emsp;&emsp;[1.收集的开源项目.md](Blog/开源项目/收集的开源项目.md)
 
-[8.自己做的小工具](Blog/自己做的小工具)
+[9.自己做的小工具](Blog/自己做的小工具)
 
 &emsp;&emsp;[1.Readme生成器.md](Blog/自己做的小工具/Readme生成器.md)
 

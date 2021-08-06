@@ -2,7 +2,7 @@
 
 第一步：通过NuGet安装**System.Text.Encoding.CodePages**包。
 
-第二步：扩展EncodingProvider以将“cp936”映射到编码
+第二步：扩展EncodingProvider以将“cp936”映射到编码。
 
 ```C#
 class Cp936EncodingProvider : EncodingProvider
