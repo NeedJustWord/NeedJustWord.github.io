@@ -49,11 +49,13 @@
 
 &emsp;&emsp;[3.Windows命令计算文件哈希值.md](Blog/其他/Windows命令计算文件哈希值.md)
 
-&emsp;&emsp;[4.如何删除一个CSDN上自己上传的资源.md](Blog/其他/如何删除一个CSDN上自己上传的资源.md)
+&emsp;&emsp;[4.不通过微软应用商店下载iTunes的操作步骤.md](Blog/其他/不通过微软应用商店下载iTunes的操作步骤.md)
 
-&emsp;&emsp;[5.批处理管理VMware服务.md](Blog/其他/批处理管理VMware服务.md)
+&emsp;&emsp;[5.如何删除一个CSDN上自己上传的资源.md](Blog/其他/如何删除一个CSDN上自己上传的资源.md)
 
-&emsp;&emsp;[6.正版免费无广告的WinRAR下载方法.md](Blog/其他/正版免费无广告的WinRAR下载方法.md)
+&emsp;&emsp;[6.批处理管理VMware服务.md](Blog/其他/批处理管理VMware服务.md)
+
+&emsp;&emsp;[7.正版免费无广告的WinRAR下载方法.md](Blog/其他/正版免费无广告的WinRAR下载方法.md)
 
 [8.开源项目](Blog/开源项目)
 
