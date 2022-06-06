@@ -70,15 +70,17 @@
 
 &emsp;&emsp;[7.2. Office官方卸载工具](Blog/其他/Office官方卸载工具.md)
 
-&emsp;&emsp;[7.3. Windows命令计算文件哈希值](Blog/其他/Windows命令计算文件哈希值.md)
+&emsp;&emsp;[7.3. Oracle可重复执行脚本](Blog/其他/Oracle可重复执行脚本.md)
 
-&emsp;&emsp;[7.4. 不通过微软应用商店下载iTunes的操作步骤](Blog/其他/不通过微软应用商店下载iTunes的操作步骤.md)
+&emsp;&emsp;[7.4. Windows命令计算文件哈希值](Blog/其他/Windows命令计算文件哈希值.md)
 
-&emsp;&emsp;[7.5. 如何删除一个CSDN上自己上传的资源](Blog/其他/如何删除一个CSDN上自己上传的资源.md)
+&emsp;&emsp;[7.5. 不通过微软应用商店下载iTunes的操作步骤](Blog/其他/不通过微软应用商店下载iTunes的操作步骤.md)
 
-&emsp;&emsp;[7.6. 批处理管理VMware服务](Blog/其他/批处理管理VMware服务.md)
+&emsp;&emsp;[7.6. 如何删除一个CSDN上自己上传的资源](Blog/其他/如何删除一个CSDN上自己上传的资源.md)
 
-&emsp;&emsp;[7.7. 正版免费无广告的WinRAR下载方法](Blog/其他/正版免费无广告的WinRAR下载方法.md)
+&emsp;&emsp;[7.7. 批处理管理VMware服务](Blog/其他/批处理管理VMware服务.md)
+
+&emsp;&emsp;[7.8. 正版免费无广告的WinRAR下载方法](Blog/其他/正版免费无广告的WinRAR下载方法.md)
 
 #### [8. 开源项目](Blog/开源项目)
 
