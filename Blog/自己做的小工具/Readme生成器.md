@@ -40,8 +40,8 @@
     <!--是否打印扩展名，1是0否-->
     <add key="IsPrintExtension" value="1"/>
 
-    <!--是否打印序号(打印内容目录则必打印序号)，1是0否-->
-    <add key="IsPrintOrder" value="1"/>
+    <!--是否打印序号，1是0否-->
+    <add key="IsPrintOrder" value="0"/>
   </appSettings>
 </configuration>
 ```
