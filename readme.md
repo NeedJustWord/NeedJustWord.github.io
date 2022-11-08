@@ -78,6 +78,8 @@
 
 &emsp;&emsp;[Office官方卸载工具](Blog/其他/Office官方卸载工具.md)
 
+&emsp;&emsp;[Visual Studio自带的远程调试工具](Blog/其他/Visual%20Studio自带的远程调试工具.md)
+
 &emsp;&emsp;[Windows命令计算文件哈希值](Blog/其他/Windows命令计算文件哈希值.md)
 
 &emsp;&emsp;[不通过微软应用商店下载iTunes的操作步骤](Blog/其他/不通过微软应用商店下载iTunes的操作步骤.md)
@@ -87,6 +89,8 @@
 &emsp;&emsp;[批处理管理VMware服务](Blog/其他/批处理管理VMware服务.md)
 
 &emsp;&emsp;[正版免费无广告的WinRAR下载方法](Blog/其他/正版免费无广告的WinRAR下载方法.md)
+
+&emsp;&emsp;[解决Tortoise状态图标不显示的问题](Blog/其他/解决Tortoise状态图标不显示的问题.md)
 
 &emsp;&emsp;[解决Typora的测试版已过期问题](Blog/其他/解决Typora的测试版已过期问题.md)
 
