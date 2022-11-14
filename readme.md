@@ -86,6 +86,10 @@
 
 &emsp;&emsp;[如何删除一个CSDN上自己上传的资源](Blog/其他/如何删除一个CSDN上自己上传的资源.md)
 
+&emsp;&emsp;[手动添加Git Bash Here到右键菜单](Blog/其他/手动添加Git%20Bash%20Here到右键菜单.md)
+
+&emsp;&emsp;[手动添加用记事本打开到右键菜单](Blog/其他/手动添加用记事本打开到右键菜单.md)
+
 &emsp;&emsp;[批处理管理VMware服务](Blog/其他/批处理管理VMware服务.md)
 
 &emsp;&emsp;[正版免费无广告的WinRAR下载方法](Blog/其他/正版免费无广告的WinRAR下载方法.md)
