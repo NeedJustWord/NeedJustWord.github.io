@@ -6,6 +6,8 @@
 
 #### [DotNetCore](#dotnetcore-1)
 
+#### [Git](#git-1)
+
 #### [IoC](#ioc-1)
 
 #### [Linux](#linux-1)
@@ -15,6 +17,8 @@
 #### [Oracle](#oracle-1)
 
 #### [Redis](#redis-1)
+
+#### [Visual Studio](#visual-studio-1)
 
 #### [其他](#其他-1)
 
@@ -41,6 +45,12 @@
 &emsp;&emsp;[编译时禁止自动生成目标版本文件夹](Blog/DotNetCore/编译时禁止自动生成目标版本文件夹.md)
 
 &emsp;&emsp;[通过配置文件修改监听端口](Blog/DotNetCore/通过配置文件修改监听端口.md)
+
+#### [Git](Blog/Git)
+
+&emsp;&emsp;[Git常用命令](Blog/Git/Git常用命令.md)
+
+&emsp;&emsp;[手动添加Git Bash Here到右键菜单](Blog/Git/手动添加Git%20Bash%20Here到右键菜单.md)
 
 #### [IoC](Blog/IoC)
 
@@ -72,21 +82,21 @@
 
 &emsp;&emsp;[Redis的详细配置](Blog/Redis/Redis的详细配置.md)
 
+#### [Visual Studio](Blog/Visual%20Studio)
+
+&emsp;&emsp;[Visual Studio自带的远程调试工具](Blog/Visual%20Studio/Visual%20Studio自带的远程调试工具.md)
+
+&emsp;&emsp;[解决Visual Studio附加到远程进程失败的问题](Blog/Visual%20Studio/解决Visual%20Studio附加到远程进程失败的问题.md)
+
 #### [其他](Blog/其他)
 
-&emsp;&emsp;[Git常用命令](Blog/其他/Git常用命令.md)
-
 &emsp;&emsp;[Office官方卸载工具](Blog/其他/Office官方卸载工具.md)
-
-&emsp;&emsp;[Visual Studio自带的远程调试工具](Blog/其他/Visual%20Studio自带的远程调试工具.md)
 
 &emsp;&emsp;[Windows命令计算文件哈希值](Blog/其他/Windows命令计算文件哈希值.md)
 
 &emsp;&emsp;[不通过微软应用商店下载iTunes的操作步骤](Blog/其他/不通过微软应用商店下载iTunes的操作步骤.md)
 
 &emsp;&emsp;[如何删除一个CSDN上自己上传的资源](Blog/其他/如何删除一个CSDN上自己上传的资源.md)
-
-&emsp;&emsp;[手动添加Git Bash Here到右键菜单](Blog/其他/手动添加Git%20Bash%20Here到右键菜单.md)
 
 &emsp;&emsp;[手动添加用记事本打开到右键菜单](Blog/其他/手动添加用记事本打开到右键菜单.md)
 
