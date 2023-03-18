@@ -10,7 +10,7 @@
    select nullable into v_flag from user_tab_columns
    where table_name=upper('表名') and column_name=upper('字段名');
    if v_flag='N' then
-   execute immediate 'alter table 表名 modify 字段名 null';
+     execute immediate 'alter table 表名 modify 字段名 null';
    end if;
    end;
    /
@@ -31,7 +31,7 @@
    select nullable into v_flag from user_tab_columns
    where table_name=upper('表名') and column_name=upper('字段名');
    if v_flag='Y' then
-   execute immediate 'alter table 表名 modify 字段名 not null';
+     execute immediate 'alter table 表名 modify 字段名 not null';
    end if;
    end;
    /
@@ -48,9 +48,9 @@
    select count(1) into v_num from user_constraints
    where constraint_type='P' and table_name=upper('表名');
    if v_num>0 then
-   select constraint_name into v_name from user_constraints
-   where constraint_type='P' and table_name=upper('表名');
-   execute immediate 'alter table 表名 drop constraint '||v_name||' cascade';
+     select constraint_name into v_name from user_constraints
+     where constraint_type='P' and table_name=upper('表名');
+     execute immediate 'alter table 表名 drop constraint '||v_name||' cascade';
    end if;
    end;
    /
@@ -69,7 +69,7 @@
    select count(1) into v_num from user_tab_columns
    where table_name=upper('表名') and column_name=upper('字段名');
    if v_num=0 then
-   execute immediate 'alter table 表名 add 字段名 类型[ default 默认值][ not null]';
+     execute immediate 'alter table 表名 add 字段名 类型[ default 默认值][ not null]';
    end if;
    end;
    /
@@ -95,3 +95,71 @@
    --设置默认值
    alter table 表名 modify 字段名 default 默认值;
    ```
+
+8. 删除表
+
+   ```sql
+   declare
+   v_num int;
+   begin
+   --删除表
+   select count(1) into v_num from user_tables
+   where table_name=upper('表名');
+   if v_num>0 then
+     execute immediate 'drop table 表名 cascade constraints';
+   end if;
+   end;
+   /
+   ```
+
+9. 删除索引
+
+   ```sql
+   declare
+   v_num int;
+   begin
+   --删除索引
+   select count(1) into v_num from user_indexes
+   where index_name=upper('索引名');
+   if v_num>0 then
+     execute immediate 'drop index 索引名';
+   end if;
+   end;
+   /
+   ```
+
+10. 批量删除表
+
+    ```sql
+    declare
+    v_num int;
+    begin
+    --批量删除表
+    for item in (select table_name from user_tables where table_name in (upper('表名1')[,upper('表名2')...])) loop
+      select count(1) into v_num from user_tables where table_name=upper(item.table_name);
+      if v_num>0 then
+        execute immediate 'drop table '||item.table_name||' cascade constraints';
+      end if;
+    end loop;
+    end;
+    /
+    ```
+
+11. 批量删除索引
+
+    ```sql
+    declare
+    v_num int;
+    begin
+    --批量删除索引
+    for item in (select index_name from user_indexes where index_name in (upper('索引名1')[,upper('索引名2')...])) loop
+      select count(1) into v_num from user_indexes where index_name=upper(item.index_name);
+      if v_num>0 then
+        execute immediate 'drop index '||item.index_name;
+      end if;
+    end loop;
+    end;
+    /
+    ```
+    
+    

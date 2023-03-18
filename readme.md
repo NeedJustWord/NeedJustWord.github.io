@@ -76,6 +76,8 @@
 
 &emsp;&emsp;[Oracle可重复执行脚本](Blog/Oracle/Oracle可重复执行脚本.md)
 
+&emsp;&emsp;[Oracle数字格式化成字符串](Blog/Oracle/Oracle数字格式化成字符串.md)
+
 #### [Redis](Blog/Redis)
 
 &emsp;&emsp;[Linux下Redis从安装到卸载](Blog/Redis/Linux下Redis从安装到卸载.md)
