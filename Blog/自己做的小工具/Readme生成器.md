@@ -12,6 +12,43 @@
 
 
 
+#### [v3.0.1](https://github.com/NeedJustWord/ReadmeGenerator/blob/master/Exes/ReadmeGenerator%20v3.0.1.zip)更新日志：
+
+1. 可配置跳过的目录
+
+```xml
+<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <appSettings>
+    <!--readme标题-->
+    <add key="Heading" value="NeedJustWord的个人博客"/>
+
+    <!--文件搜索字符串-->
+    <add key="SearchPattern" value="*.md"/>
+
+    <!--配置内容根目录，支持绝对路径和相对路径(相对执行程序的路径)-->
+    <add key="Root" value="..\..\..\..\..\..\NeedJustWord.github.io\Blog"/>
+
+    <!--readme.md文件所在目录，支持绝对路径和相对路径(相对执行程序的路径)-->
+    <add key="ReadMeFilePath" value="..\..\..\..\..\..\NeedJustWord.github.io"/>
+
+    <!--是否打印内容目录，1是0否-->
+    <add key="IsPrintCatalogue" value="1"/>
+
+    <!--是否打印扩展名，1是0否-->
+    <add key="IsPrintExtension" value="0"/>
+
+    <!--是否打印序号，1是0否-->
+    <add key="IsPrintOrder" value="0"/>
+
+      <!--跳过的目录名，多个目录使用\分隔，为空表示没有需要跳过的目录-->
+      <add key="SkipDirs" value=".vs"/>
+  </appSettings>
+</configuration>
+```
+
+
+
 #### [v3.0.0](https://github.com/NeedJustWord/ReadmeGenerator/blob/master/Exes/ReadmeGenerator%20v3.0.0.zip)更新日志：
 
 1. 新增生成目录功能，且可配置是否生成目录
