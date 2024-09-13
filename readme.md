@@ -88,6 +88,8 @@
 
 &emsp;&emsp;[Visual Studio自带的远程调试工具](Blog/Visual%20Studio/Visual%20Studio自带的远程调试工具.md)
 
+&emsp;&emsp;[解决Visual Studio扩展项目生成失败的问题](Blog/Visual%20Studio/解决Visual%20Studio扩展项目生成失败的问题.md)
+
 &emsp;&emsp;[解决Visual Studio附加到远程进程失败的问题](Blog/Visual%20Studio/解决Visual%20Studio附加到远程进程失败的问题.md)
 
 #### [其他](Blog/其他)
