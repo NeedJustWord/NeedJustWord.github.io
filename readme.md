@@ -16,6 +16,8 @@
 
 #### [Oracle](#oracle-1)
 
+#### [PowerShell](#powershell-1)
+
 #### [Redis](#redis-1)
 
 #### [Visual Studio](#visual-studio-1)
@@ -77,6 +79,10 @@
 &emsp;&emsp;[Oracle可重复执行脚本](Blog/Oracle/Oracle可重复执行脚本.md)
 
 &emsp;&emsp;[Oracle数字格式化成字符串](Blog/Oracle/Oracle数字格式化成字符串.md)
+
+#### [PowerShell](Blog/PowerShell)
+
+&emsp;&emsp;[批量更新Git和Svn仓库](Blog/PowerShell/批量更新Git和Svn仓库.md)
 
 #### [Redis](Blog/Redis)
 
