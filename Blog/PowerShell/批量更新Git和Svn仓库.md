@@ -23,6 +23,28 @@ function Start-BatchUpdate{
     Start-BatchUpdateInternal $Path $Git $Svn $Always
 
     cd $CurrentRoot
+
+    Write-Output ""
+
+    <#
+    .SYNOPSIS
+    批量更新Git项目和Svn项目
+
+    .DESCRIPTION
+    查找Path参数指定目录下所有Git项目和Svn项目，并进行更新，支持只更新一次或循环更新直到更新成功为止
+
+    .PARAMETER Path
+    查找根目录，默认当前路径
+
+    .PARAMETER Git
+    更新找到的Git项目
+
+    .PARAMETER Svn
+    更新找到的Svn项目
+
+    .PARAMETER Always
+    循环更新直到更新成功为止
+    #>
 }
 
 function Start-BatchUpdateInternal{
@@ -35,13 +57,14 @@ function Start-BatchUpdateInternal{
     )
     
     if(Test-GitDir $Path){
-        Write-Output "找到Git目录，是否更新：$Git，$Path"
+        Write-Output ""
+        Write-Output "找到Git目录，是否更新：$Git，是否更新成功为止：$Always，$Path"
         if($Git){
             cd $Path
             if($Always){
                 do{
                     git pull
-                }while (!($?))
+                }until ($?)
             }
             else{
                 git pull
@@ -49,13 +72,14 @@ function Start-BatchUpdateInternal{
         }
     }
     elseif(Test-SvnDir $Path){
-        Write-Output "找到Svn目录，是否更新：$Svn，$Path"
+        Write-Output ""
+        Write-Output "找到Svn目录，是否更新：$Svn，是否更新成功为止：$Always，$Path"
         if($Svn){
             cd $Path
             if($Always){
                 do{
                     svn update
-                }while (!($?))
+                }until ($?)
             }
             else{
                 svn update
@@ -64,7 +88,7 @@ function Start-BatchUpdateInternal{
     }
     else {
        Get-ChildItem $Path -Directory | ForEach-Object -Process{
-            Start-BatchUpdateInternal $_.FullName $Git $Svn
+            Start-BatchUpdateInternal $_.FullName $Git $Svn $Always
        }
     }
 }
