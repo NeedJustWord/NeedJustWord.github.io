@@ -14,12 +14,13 @@ function Start-BatchUpdate{
         [ValidateNotNullOrEmpty()]
         [string]$Path=($pwd).Path,
         [switch]$Git,
-        [switch]$Svn
+        [switch]$Svn,
+        [switch]$Always
     )
 
     $CurrentRoot=($pwd).Path
 
-    Start-BatchUpdateInternal $Path $Git $Svn
+    Start-BatchUpdateInternal $Path $Git $Svn $Always
 
     cd $CurrentRoot
 }
@@ -29,21 +30,36 @@ function Start-BatchUpdateInternal{
         [ValidateNotNullOrEmpty()]
         [string]$Path=($pwd).Path,
         [bool]$Git,
-        [bool]$Svn
+        [bool]$Svn,
+        [bool]$Always
     )
     
     if(Test-GitDir $Path){
         Write-Output "找到Git目录，是否更新：$Git，$Path"
         if($Git){
             cd $Path
-            git pull
+            if($Always){
+                do{
+                    git pull
+                }while (!($?))
+            }
+            else{
+                git pull
+            }
         }
     }
     elseif(Test-SvnDir $Path){
         Write-Output "找到Svn目录，是否更新：$Svn，$Path"
         if($Svn){
             cd $Path
-            svn update
+            if($Always){
+                do{
+                    svn update
+                }while (!($?))
+            }
+            else{
+                svn update
+            }
         }
     }
     else {
