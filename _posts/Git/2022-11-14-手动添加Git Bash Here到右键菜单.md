@@ -5,13 +5,13 @@ categories: Git
 tags: [Git, 右键菜单]
 ---
 
-##### 问题：
+### 问题
 
 安装Git的时候，没有勾选安装Git Bash Here到右键菜单
 
 
 
-##### 解决方法：
+### 解决方法
 
 1. Win+R键，弹出命令行输入框，输入：**regedit**，打开注册表
 2. 找到路径：**计算机\HKEY_CLASSES_ROOT\Directory\Background**
@@ -25,6 +25,7 @@ tags: [Git, 右键菜单]
 
 
 
-##### 参考资料：
+### 参考资料
 
 1. [手动添加git 到 右键菜单](https://www.cnblogs.com/whm-blog/p/7525903.html)
+

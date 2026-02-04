@@ -5,7 +5,7 @@ categories: DotNet
 tags: [DotNet, DotNetty]
 ---
 
-## 症状
+### 症状
 
 ​		同一份代码，在控制台程序下没有问题，在网站上出错，出错日志及出错位置如下
 
@@ -27,7 +27,7 @@ channel = await bootstrap.ConnectAsync(remoteEndPoint).ConfigureAwait(false);
 
 
 
-## 调试
+### 调试
 
 ​		调试网站，发现以下代码出现异常
 
@@ -78,19 +78,19 @@ Location:控制台根目录
 
 
 
-## 原因
+### 原因
 
 ​		网站生成的System.Runtime.CompilerServices.Unsafe.dll文件不对导致的
 
 
 
-## 验证
+### 验证
 
 ​		将控制台的System.Runtime.CompilerServices.Unsafe.dll文件复制到网站根目录，重启网站，问题解决
 
 
 
-## 分析
+### 分析
 
 ​		System.Runtime.CompilerServices.Unsafe组件是DotNetty引入的，DotNetty是通过NuGet安装的。但是DotNetty是封装在一个公共类库给网站和控制台使用，按理说不会出现生成文件不一样的问题。
 
@@ -98,7 +98,7 @@ Location:控制台根目录
 
 
 
-## 解决办法
+### 解决办法
 
 ​		在NuGet可以看到使用的DotNetty版本依赖的是4.5.2版本的System.Runtime.CompilerServices.Unsafe，至此，有以下两种办法解决：
 
