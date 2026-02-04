@@ -23,6 +23,6 @@ Extension '扩展项目名.扩展Guid' could not be found. Please make sure the 
 
 
 
-参考资料：
+##### 参考资料：
 
 1. [Extension could not be found. Please make sure the extension has been installed](https://stackoverflow.com/questions/32870002/extension-could-not-be-found-please-make-sure-the-extension-has-been-installed)

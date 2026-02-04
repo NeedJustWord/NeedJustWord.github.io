@@ -16,6 +16,6 @@ tags: [Oracle]
 select trunc(sysdate) from dual
 ```
 
-参考资料：
+#### 参考资料：
 
 1. [Oracle删除Date日期后的时分秒](https://blog.csdn.net/grace_cxj/article/details/115732263)

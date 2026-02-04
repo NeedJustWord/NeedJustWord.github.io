@@ -68,7 +68,7 @@ systemctl [stop|start|restart] iptables
 
 
 
-参考资料：
+### 参考资料：
 
 1. [解决CentOS（6和7版本），/etc/sysconfig/下没有iptables的问题](https://blog.csdn.net/csdn_lqr/article/details/53885808)
 
