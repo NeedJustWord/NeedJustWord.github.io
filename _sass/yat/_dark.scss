@@ -218,5 +218,17 @@ html[data-theme="dark"] {
   .toggle {
     background-color: #34323d;
   }
+
+  .hljs {
+    background: #1e1e1e
+  }
+
+  .hljs, .hljs-subst {
+    color: #dcdcdc
+  }
+
+  .hljs-comment {
+    color: #999999
+  }
 }
 
