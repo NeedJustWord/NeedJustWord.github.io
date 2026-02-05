@@ -1,7 +1,7 @@
 $dark-background-color:       #0e0e0e !default;
 $dark-text-color: #bbb !default;
 
-html[data-theme="dark"]  {
+html[data-theme="dark"] {
   &[data-scroll-status='top'] {
     header.site-header-transparent {
       &.site-header {
@@ -74,7 +74,7 @@ html[data-theme="dark"]  {
 
     @include media-query($on-laptop) {
       .menu-icon > svg {
-          fill: rgba($dark-text-color, 80%);
+        fill: rgba($dark-text-color, 80%);
       }
 
       .site-nav input:checked ~ .trigger {
@@ -213,6 +213,10 @@ html[data-theme="dark"]  {
         }
       }
     }
+  }
+
+  .toggle {
+    background-color: #34323d;
   }
 }
 
