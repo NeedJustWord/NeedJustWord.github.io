@@ -82,6 +82,8 @@
 
 #### [PowerShell](_posts/PowerShell)
 
+&emsp;&emsp;[2026-02-05 一键打包推送Nuget包](_posts/PowerShell/2026-02-05-一键打包推送Nuget包.md)
+
 &emsp;&emsp;[2024-09-24 批量更新Git和Svn仓库](_posts/PowerShell/2024-09-24-批量更新Git和Svn仓库.md)
 
 #### [Redis](_posts/Redis)
