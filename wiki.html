@@ -3,9 +3,11 @@ layout: default
 title: 知识库
 ---
 
+<h2>{{page.title}}</h2>
+
 {%- if site.wiki.size > 0 -%}
 <div class="page-segments">
-  <ul class="page-segments-list">
+  <ul class="wiki-page-segments-list">
     {% for wiki in site.wiki %}
     <li>
       <span>
