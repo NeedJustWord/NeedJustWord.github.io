@@ -1,0 +1,17 @@
+---
+layout: default
+---
+
+{%- if site.wiki.size > 0 -%}
+<ul>
+
+  {% for wiki in site.wiki %}
+  <li>
+    <a class="post-link" href="{{ wiki.url | relative_url }}">
+      {{ wiki.title | escape }}
+    </a>
+  </li>
+  {% endfor %}
+
+</ul>
+{%- endif -%}

@@ -158,6 +158,11 @@ header_pages:
   - categories.html
   - tags.html
   - archives.html
+  - wiki.html
+
+collections:
+  wiki:
+    output: true
 
 # Page default value
 # defaults:
