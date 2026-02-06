@@ -1,4 +1,20 @@
 ---
-layout: wiki
+layout: default
 title: 知识库
 ---
+
+{%- if site.wiki.size > 0 -%}
+<div class="page-segments">
+  <ul class="page-segments-list">
+    {% for wiki in site.wiki %}
+    <li>
+      <span>
+        <a class="post-link" href="{{ wiki.url | relative_url }}">
+          {{ wiki.title | escape }}
+        </a>
+      </span>
+    </li>
+    {% endfor %}
+  </ul>
+</div>
+{%- endif -%}
