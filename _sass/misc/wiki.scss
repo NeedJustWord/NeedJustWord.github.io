@@ -121,6 +121,14 @@
   }
 }
 
-.wiki-page-segments-list {
-  margin-left: 0;
+.wiki-list {
+  h2 {
+    @include relative-font-size(2);
+
+    @include media-query($on-laptop) {
+      @include relative-font-size(1.75);
+    }
+
+    border-bottom: 1px solid #ebebeb;
+  }
 }

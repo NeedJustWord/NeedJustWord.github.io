@@ -3,20 +3,22 @@ layout: default
 title: 知识库
 ---
 
-<h2>{{page.title}}</h2>
+<div class="wiki-list">
+  <h2>{{page.title}}</h2>
 
-{%- if site.wiki.size > 0 -%}
-<div class="page-segments">
-  <ul class="wiki-page-segments-list">
-    {% for wiki in site.wiki %}
-    <li>
-      <span>
-        <a class="post-link" href="{{ wiki.url | relative_url }}">
-          {{ wiki.title | escape }}
-        </a>
-      </span>
-    </li>
-    {% endfor %}
-  </ul>
+  {%- if site.wiki.size > 0 -%}
+  <div class="page-segments">
+    <ul>
+      {% for wiki in site.wiki %}
+      <li>
+        <span>
+          <a class="post-link" href="{{ wiki.url | relative_url }}">
+            {{ wiki.title | escape }}
+          </a>
+        </span>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {%- endif -%}
 </div>
-{%- endif -%}
