@@ -49,6 +49,8 @@ function Get-GitUrl {
     )
 
     $CurrentRoot = ($pwd).Path
+
+    $WriteFile = $CreateSameDir -or $WriteFile
     if ($WriteFile -and (-not (Test-Path $OutputPath))) {
         New-Item -Path $OutputPath -ItemType Directory
     }
@@ -59,7 +61,6 @@ function Get-GitUrl {
     }
 
     $Path = (Resolve-Path $Path).Path
-    $CreateSameDir = $WriteFile -and $CreateSameDir
     Get-GitUrlInternal $Path $Path $OutputFile $WriteFile $GitClone $CreateSameDir
 
     Set-Location $CurrentRoot
@@ -92,7 +93,7 @@ function Get-GitUrl {
     是否生成Git克隆命令
 
     .PARAMETER CreateSameDir
-    是否创建相同的目录结构
+    是否创建相同的目录结构，设置此参数时表示写文件
     #>
 }
 
@@ -114,7 +115,7 @@ function Get-GitUrlInternal {
         $HaveGitDir = $false
         $RelativeRoot = $Root
         if ($CreateSameDir) {
-            Get-ChildItem $Path -Directory | ForEach-Object -Process {
+            Get-ChildItem $Path -Directory | Where-Object { -not $HaveGitDir } | ForEach-Object -Process {
                 if (Test-GitDir $_.FullName) {
                     $HaveGitDir = $true
                 }
@@ -206,7 +207,7 @@ function Write-GitUrl {
         if ($_ -like "*url = *") {
             $NotBreak = $False
             $Index = $_.IndexOf("=")
-            $Value = $_.Substring($Index + 2, $_.Length - $Index - 2)
+            $Value = $_.Substring($Index + 1, $_.Length - $Index - 1).Trim()
             if ($GitClone) {
                 $Value = "git clone $Value"
             }
