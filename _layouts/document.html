@@ -1,0 +1,18 @@
+---
+layout: framework
+banner:
+banner_html: post-header.html
+hidden: []
+sidebar:
+  - article-menu
+---
+
+<div class="document">
+  <section>
+
+    {%- include sidebar/document-list.html nav=page.nav -%}
+
+    {%- include views/article.html -%}
+
+  </section>
+</div>
