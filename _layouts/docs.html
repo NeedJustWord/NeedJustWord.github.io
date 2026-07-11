@@ -1,0 +1,68 @@
+---
+layout: framework
+banner:
+banner_html:
+hidden: []
+wide: true
+have_footer: false
+sidebar:
+  - article-menu
+---
+
+<section class="docs">
+  <div class="docs-container">
+    <div class="sidebar docs-nav" id="leftSidebar">
+      {% include sidebar/docs-menu.html -%}
+    </div>
+
+    <div class="resizer" id="dragHandle"></div>
+
+    <div class="docs-content">
+      <article>
+        {%- include views/docs-header.html -%}
+        {%- include views/article.html -%}
+      </article>
+    </div>
+  </div>
+</section>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    const resizer = document.getElementById('dragHandle');
+    const leftSidebar = document.getElementById('leftSidebar');
+    const container = document.querySelector('.docs-container');
+    let isResizing = false;
+    let currentWidth = leftSidebar.style.width; // 初始宽度
+
+    resizer.addEventListener('mousedown', function (e) {
+      isResizing = true;
+      document.body.style.cursor = 'col-resize';
+      // 防止选中文字
+      e.preventDefault();
+    });
+
+    document.addEventListener('mousemove', function (e) {
+      if (!isResizing) return;
+
+      // 使用 requestAnimationFrame 节流，确保每帧只更新一次 DOM
+      window.requestAnimationFrame(() => {
+        // 计算新宽度：鼠标位置 - 容器左偏移
+        const containerRect = container.getBoundingClientRect();
+        let newWidth = e.clientX - containerRect.left;
+
+        // 仅当宽度变化时才更新 DOM
+        if (newWidth !== currentWidth) {
+          leftSidebar.style.width = newWidth + 'px';
+          currentWidth = newWidth;
+        }
+      });
+    });
+
+    document.addEventListener('mouseup', function () {
+      if (isResizing) {
+        isResizing = false;
+        document.body.style.cursor = 'default';
+      }
+    });
+  });
+</script>

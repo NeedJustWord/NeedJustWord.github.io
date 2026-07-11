@@ -159,8 +159,12 @@ header_pages:
   - tags.html
   - archives.html
   - wiki.html
+  - docs.md
 
 collections:
+  docs:
+    permalink: "/:collection/:path/"
+    output: true
   wiki:
     output: true
 

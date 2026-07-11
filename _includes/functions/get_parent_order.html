@@ -1,0 +1,12 @@
+{% assign current_order = include.order %}
+{% if current_order %}
+  {% assign parts = current_order | split: "." %}
+  {% assign len = parts.size %}
+  {% if len > 2 %}
+    {% assign new_len = len | minus: 2 %}
+    {% assign parent_parts = parts | slice: 0, new_len %}
+    {% assign parent_order = parent_parts | join: "." | append: "." %}
+  {% else %}
+    {% assign parent_order = "" %}
+  {% endif %}
+{% endif %}

@@ -1,0 +1,25 @@
+{% assign docs_nav = site.data.docs_nav %}
+
+{% if docs_nav.size > 0 -%}
+
+<div class="docs-menu">
+  <div class="docs-menu-content">
+    <ul>
+      {% for section in docs_nav %}
+      <li class="h-h2">
+        {% if section.url %}
+        <a href="{{ section.url }}">{{ section.title }}</a>
+        {% else %}
+        <a>{{ section.title }}</a>
+        {% endif %}
+
+        {% if section.nav %}
+        {% include sidebar/docs-submenu.html docs_nav=section.nav parent_order="" %}
+        {% endif %}
+      </li>
+      {% endfor -%}
+    </ul>
+  </div>
+</div>
+
+{%- endif -%}

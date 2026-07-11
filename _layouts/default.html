@@ -3,25 +3,35 @@
 
   {%- include head.html -%}
 
-  <body>
+  {%- assign name = 'wide' -%}
+  {%- include functions.html func='get_value' -%}
+  {%- assign wide = return -%}
 
-    {%- include views/header.html -%}
+  {%- assign name = 'have_footer' -%}
+  {%- include functions.html func='get_value' default=true -%}
+  {%- assign have_footer = return -%}
 
-    {%- include views/banner.html -%}
+<body class="{% if wide %}page-wide{% endif %}">
 
-    {%- include extensions/hashlocate.html -%}
+  {%- include views/header.html -%}
 
-    {%- include extensions/theme-toggle.html -%}
+  {%- include views/banner.html -%}
 
-    {%- include extensions/click-to-top.html -%}
+  {%- include extensions/hashlocate.html -%}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+  {%- include extensions/theme-toggle.html -%}
 
-    {%- include views/footer.html -%}
+  {%- include extensions/click-to-top.html -%}
 
-  </body>
+  <main class="page-content" aria-label="Content">
+    <div class="wrapper">
+      {{ content }}
+    </div>
+  </main>
+
+  {%- if have_footer -%}
+  {%- include views/footer.html -%}
+  {%- endif -%}
+
+</body>
 </html>

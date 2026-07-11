@@ -1,0 +1,22 @@
+{% assign docs_nav = include.docs_nav %}
+{% assign parent_order = include.parent_order %}
+
+<ol>
+  {% for section in docs_nav %}
+  <li class="h-h3">
+    {% assign order = parent_order | append: forloop.index | append: "." %}
+    {% if section.url %}
+    <a href="{{ section.url }}"><strong>{{ order }}</strong>{{ section.title }}</a>
+    {% else %}
+    <a><strong>{{ order }}</strong>{{ section.title }}</a>
+    {% endif %}
+
+    {% if section.nav %}
+    {% include sidebar/docs-submenu.html docs_nav=section.nav parent_order=order %}
+
+    {% include functions/get_parent_order.html order=parent_order %}
+    {%- assign parent_order = return -%}
+    {% endif %}
+  </li>
+  {% endfor -%}
+</ol>

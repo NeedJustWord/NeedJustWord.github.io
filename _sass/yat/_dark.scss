@@ -47,6 +47,28 @@ html[data-theme="dark"] {
     }
   }
 
+  .docs-nav {
+    background-color: #0e0e0e;
+  }
+
+  .docs-menu {
+    .docs-menu-content {
+      ul {
+        .active {
+          background-color: #2d2d2d;
+        }
+
+        a {
+          color: $dark-text-color;
+        }
+
+        a:hover {
+          color: #fff !important;
+        }
+      }
+    }
+  }
+
   .site-header {
     background-color: #090909;
 
