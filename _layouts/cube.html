@@ -1,0 +1,23 @@
+---
+layout: docs
+---
+
+<script type="text/javascript" src="/assets/js/twistysim.js"></script>
+<style type="text/css" rel="stylesheet">
+    /*
+  modifies the opacity of the cube wireframe
+  修改魔方线框的不透明度
+  */
+    .ttk-shp-poly {
+      stroke-opacity: 0.3;
+    }
+    /*
+  modifies the color of the cube wireframe in dark mode
+  修改深色模式下魔方线框的颜色
+  */
+    html[data-theme="dark"] .ttk-shp-poly {
+      stroke: white;
+    }
+</style>
+
+{{ content }}

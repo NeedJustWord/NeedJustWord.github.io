@@ -35,13 +35,18 @@
     /* 文档内容区 */
     .docs-content {
       width: 100%;
+      display: flex;
+      justify-content: center;
+
+      .docs-article {
+        width: 80%;
+      }
     }
   }
 
   .post-header {
-    margin: 50px auto 60px;
-    padding: 0 0 20px;
-    border-bottom: 1px solid #ebebeb;
+    display: flex;
+    justify-content: center;
 
     .post-title {
       margin-bottom: 6px;
@@ -68,8 +73,6 @@
       @include media-query($on-laptop) {
         @include relative-font-size(1.75);
       }
-
-      border-bottom: 1px solid #ebebeb;
     }
 
     h3 {

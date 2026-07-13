@@ -1,2 +1,8 @@
 - title: 文档库
   url: /docs/
+- title: 魔方
+  nav:
+  - title: 入门
+    url: /docs/魔方/入门/
+  - title: 记号
+    url: /docs/魔方/记号/
